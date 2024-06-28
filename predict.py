@@ -10,11 +10,9 @@ from threading import Thread
 from transformers import GemmaTokenizerFast, AutoModelForCausalLM
 from transformers.generation.streamers import TextIteratorStreamer
 
-
-# MODEL_URL = "https://weights.replicate.delivery/default/google/gemma-2-9b-bf16/model.tar"
 MODEL_URL = "https://weights.replicate.delivery/default/google/gemma-2-9b-it-bf16/model.tar"
+# MODEL_URL = "https://weights.replicate.delivery/default/google/gemma-2-27b-it-bf16/model.tar"
 MODEL_CACHE = "checkpoints"
-
 
 def download_weights(url, dest):
     start = time.time()
